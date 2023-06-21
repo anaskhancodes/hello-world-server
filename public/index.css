@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(26, 26, 26, 0.897);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contaner {
+    background-color: rgb(0, 0, 0);
+    height: 35vw;
+    width: 50vw;
+    margin-top: 70px;
+    border-radius: 1vw;
+}
+
+.contaner h1 {
+    color: white;
+    font-size: 9vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25px;
+    position: relative;
+    bottom: 3vw;
+    /* background-color: aqua; */
+    width: 40%;
+}
+
+.contaner .up-down {
+    font-size: 2vw;
+    color: white;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35px;
+    position: absolute;
+    bottom: 33vw;
+    left: 35vw;
+}
+
+
+.contaner h3 {
+    color: white;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35px;
+    position: relative;
+    bottom: 3vw;
+}
+
+
+
+
+.contaner input {
+    height: 2.5vw;
+    width: 15vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 27vw;
+    position: absolute;
+    margin-top: 2vw;
+    margin-left: 25vw;
+    border-radius: 2vw;
+}
+
+.contaner button {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: yellow;
+    position: relative;
+    left: 45vw;
+    top: 2vw;
+}
+
+.contaner button i {
+    display: flex;
+    justify-content: center;
+    width: 2.6vw;
+}
+
+.contaner .temperature-icons {
+    /* background-color: aqua; */
+    width: 180px;
+    height: 250px;
+    margin-top: -25px;
+}
+
+.contaner .temperature-icons i {
+    font-size: 2.5vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+
+.contaner .temperature-icons p span {
+    color: white;
+    margin-left: 0.8vw;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img img {
+    width: 30vw;
+    margin-left: 20vw;
+    margin-top: -6VW;
+    position: absolute;
+}
+
+
+/* @media (max-width: 412px) and (max-height: 912px) {
+
+
+    .contaner {
+        min-width: 400px;
+        min-height: 900px;
+    }
+
+    .contaner .temperature-icons {
+        margin-top: 160vw;
+        margin-left: 19vw;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .contaner .temperature-icons i {
+        font-size: 7vw;
+    }
+
+    .contaner .temperature-icons p span {
+        display: flex;
+        font-size: 4vw;
+        justify-content: center;
+        margin-top: 2vw;
+    }
+
+    .contaner .img {
+        display: flex;
+        justify-content: center;
+        margin-right: 20vw;
+    }
+
+    .img img {
+        margin-top: 74vw;
+        width: 91vw;
+    }
+
+    .contaner h1 {
+        position: absolute;
+        margin-left: 88px;
+        margin-bottom: 61vw;
+        font-size: 34vw;
+        height: 200px;
+        width: 219px;
+    }
+
+    .contaner span {
+        margin-left: -20px;
+        font-size: 15px;
+    }
+
+    .contaner h3 {
+        position: absolute;
+        margin-bottom: 64vw;
+        margin-left: 28vw;
+        font-size: 5vw;
+    }
+
+    .contaner input {
+        margin-top: 7vw;
+        margin-left: 7vw;
+        width: 43vw;
+        height: 8vw;
+        border-radius: 20vw;
+    }
+
+    .contaner button {
+        margin-top: 5vw;
+        margin-left: 19vw;
+        width: 9vw;
+        height: 9vw;
+    }
+
+
+} */
+
+
+
+/* @media (max-width: 280px) and (max-height: 653px) {
+    .contaner {
+        max-width: 130px;
+        min-height: 640px;
+    }
+
+    .contaner .temperature-icons {
+        margin-top: 170vw;
+        margin-left: 13vw;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .contaner .img {
+        display: flex;
+        justify-content: center;
+        margin-right: 20vw;
+    }
+
+    .img img {
+        width: 100vw;
+        margin-left: 22vw;
+    }
+
+    .contaner h1 {
+        position: absolute;
+        margin-left: 48px;
+        margin-bottom: 104vw;
+        font-size: 41vw;
+        height: 200px;
+        width: 219px;
+    }
+
+    .contaner h3 {
+        position: absolute;
+        margin-bottom: 125vw;
+        margin-left: 27vw;
+        font-size: 6vw;
+    }
+
+    .contaner input {
+        margin-top: 7vw;
+        margin-left: 7vw;
+        width: 44vw;
+        height: 9vw;
+        border-radius: 20vw;
+    }
+
+    .contaner button {
+        margin-top: 5vw;
+        margin-left: 25vw;
+        width: 11vw;
+        height: 11vw;
+    }
+} */
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* @media (max-width: 540px) and (max-height: 720px) {
+    .contaner {
+        height: 118vw;
+        width: 87vw;
+        margin-top: 13px;
+        margin-left: -2vw;
+        border-radius: 1vw;
+    }
+
+    .contaner .temperature-icons {
+        margin-top: 170vw;
+        margin-left: 13vw;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .contaner .img {
+        display: flex;
+        justify-content: center;
+        margin-right: 20vw;
+    }
+
+    .img img {
+        width: 53vw;
+        margin-left: 18vw;
+        margin-top: 38vw;
+    }
+
+    .contaner h1 {
+        position: absolute;
+        margin-left: 136px;
+        margin-bottom: 90vw;
+        font-size: 25vw;
+        height: 132px;
+        width: 335px;
+    }
+
+    .contaner h1 span {
+        font-size: 4vw;
+        margin-left: -4vw;
+    }
+
+    .contaner h3 {
+        position: absolute;
+        margin-bottom: 80vw;
+        margin-left: 31vw;
+        font-size: 4vw;
+    }
+
+    .contaner input {
+        margin-top: 5vw;
+        margin-left: 7vw;
+        width: 44vw;
+        height: 7vw;
+        border-radius: 20vw;
+    }
+
+    .contaner button {
+        margin-top: 3vw;
+        margin-left: 22vw;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .contaner button i {
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+
+    .contaner .temperature-icons {
+        margin-top: 80vw;
+        margin-left: 24vw;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .contaner .temperature-icons i {
+        font-size: 7vw;
+    }
+
+    .contaner .temperature-icons p span {
+        display: flex;
+        font-size: 4vw;
+        justify-content: center;
+        margin-top: 2vw;
+    }
+} */
+
+
+ 
+
+
+
+/* @media (max-width: 912px) and (max-height: 1368px) {
+    .contaner {
+        height: 135vw;
+        width: 87vw;
+        margin-top: 63px;
+        margin-left: 0vw;
+        border-radius: 1vw;
+    }
+
+
+.contaner .temperature-icons {
+    margin-top: 170vw;
+    margin-left: 13vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.contaner .img {
+    display: flex;
+    justify-content: center;
+    margin-right: 20vw;
+}
+
+.img img {
+    width: 53vw;
+    margin-left: 18vw;
+    margin-top: 38vw;
+}
+
+.contaner h1 {
+    position: absolute;
+    margin-left: 136px;
+    margin-bottom: 90vw;
+    font-size: 25vw;
+    height: 132px;
+    width: 335px;
+}
+
+.contaner h1 span {
+    font-size: 4vw;
+    margin-left: -4vw;
+}
+
+.contaner h3 {
+    position: absolute;
+    margin-bottom: 80vw;
+    margin-left: 31vw;
+    font-size: 4vw;
+}
+
+.contaner input {
+    margin-top: 5vw;
+    margin-left: 7vw;
+    width: 44vw;
+    height: 7vw;
+    border-radius: 20vw;
+}
+
+.contaner button {
+    margin-top: 3vw;
+    margin-left: 22vw;
+    width: 8vw;
+    height: 8vw;
+}
+
+.contaner button i {
+    font-size: 3vw;
+    margin-left: 2vw;
+}
+
+.contaner .temperature-icons {
+    margin-top: 80vw;
+    margin-left: 24vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.contaner .temperature-icons i {
+    font-size: 7vw;
+}
+
+.contaner .temperature-icons p span {
+    display: flex;
+    font-size: 5vw;
+    justify-content: center;
+    margin-top: 3vw;
+}
+} */

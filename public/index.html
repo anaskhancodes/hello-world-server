@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="contaner">
+
+        <form onsubmit="getWeather(); return false">
+            <!-- Search Location -->
+            <label for="search-city"></label>
+            <input type="text" id="CityName" placeholder="Search City">
+
+            <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+
+
+            <!-- Teamprature -->
+            <h1 id="TemperatuerNumber">00 </h1><span class="up-down">°C|°F</span>
+
+
+            <!-- Location-name -->
+            <h3 id="LocationName">Location <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></h3>
+        </form>
+
+
+
+        <div class="img">
+            <img src="images/cloud day.png" alt="" srcset="">
+        </div>
+
+
+        <div class="temperature-icons">
+            <!-- High-temprature-icon -->
+            <p><i class="fa-solid fa-temperature-full" style="color: #ff0000;"></i> &nbsp; &nbsp;
+                <span id="TemperatureText2">00°</span>
+            </p>
+
+            <!-- Low-temperature-icon -->
+            <p><i class="fa-solid fa-temperature-quarter" style="color: #005eff;"></i> &nbsp;
+                &nbsp; <span id="TemperatureText">00°</span></p>
+
+            <!-- wind-icon -->
+            <p><i class="fa-solid fa-wind" style="color: #dbdbdb;"></i>&nbsp; <span id="WindText">00 k/h</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        const CloudDay = document.querySelector("img");
+
+
+        window.getWeather = function () {
+
+            let CityName = document.querySelector("#CityName").value;
+
+
+
+
+            axios.get(`/weather/${CityName}`)
+                .then(function (response) {
+                    // handle success 
+                    console.log(response.data); {
+                        
+
+                        // res.send({
+                        //     city: "KArachi",
+                        //     TemoInC: 32,
+                        //     Wind: 54,
+                        //     high: 36,
+                        //     low: 28
+                        // })
+
+
+
+                        document.querySelector("#TemperatuerNumber").innerHTML = Math.round(`${response.data.TemoInC} `)
+                        //
+                        document.querySelector("#LocationName").innerHTML = `${response.data.city} <i class="fa-solid fa-location-dot" style="color: #ffffff;">`
+                        //
+                        document.querySelector("#WindText").innerHTML = `${response.data.Wind}km/h`
+                        //
+                        document.querySelector("#TemperatureText").innerHTML = `${response.data.high}°`
+                        //
+                        document.querySelector("#TemperatureText2").innerHTML = `${response.data.low}°`
+                        //
+
+
+                    }
+
+                })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error.data);
+                })
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
