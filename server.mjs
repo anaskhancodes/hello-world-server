@@ -62,7 +62,7 @@ app.get('/weather/:CityName', (req, res) => {
             TemoInC: 21,
             Wind: 7,
             high: 22,
-            low: 20
+            low: 20 
         },
     }
 
