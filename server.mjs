@@ -47,7 +47,23 @@ app.get('/weather/:CityName', (req, res) => {
             Wind: 10,
             high: 38,
             low: 30
-        }
+        },
+
+        Quetta:{
+            city: "Quetta",
+            TemoInC: 20,
+            Wind: 5,
+            high: 21,
+            low: 18
+        },
+
+        Multan:{
+            city: "Multan",
+            TemoInC: 21,
+            Wind: 7,
+            high: 22,
+            low: 20
+        },
     }
 
     let UserInputCityName = req.params.CityName.toLowerCase();
