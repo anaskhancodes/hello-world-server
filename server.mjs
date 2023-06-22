@@ -41,7 +41,7 @@ app.get('/weather/:CityName', (req, res) => {
             low: 14
         },
 
-        Faisalabad:{
+        faisalabad:{
             city: "Faisalabad",
             TemoInC: 34,
             Wind: 10,
@@ -49,7 +49,7 @@ app.get('/weather/:CityName', (req, res) => {
             low: 30
         },
 
-        Quetta:{
+        quetta:{
             city: "Quetta",
             TemoInC: 20,
             Wind: 5,
@@ -57,7 +57,7 @@ app.get('/weather/:CityName', (req, res) => {
             low: 18
         },
 
-        Multan:{
+        multan:{
             city: "Multan",
             TemoInC: 21,
             Wind: 7,
